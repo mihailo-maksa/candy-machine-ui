@@ -401,21 +401,29 @@ const Home = (props: HomeProps) => {
         }
       }
     } catch (error) {
+      // @ts-ignore
       let message = error.msg || 'Minting failed! Please try again!';
+      // @ts-ignore
       if (!error.msg) {
+      // @ts-ignore
         if (!error.message) {
           message = 'Transaction timeout! Please try again.';
+      // @ts-ignore
         } else if (error.message.indexOf('0x137')) {
+      // @ts-ignore
           console.log(error);
           message = `SOLD OUT!`;
+      // @ts-ignore
         } else if (error.message.indexOf('0x135')) {
           message = `Insufficient funds to mint. Please fund your wallet.`;
         }
       } else {
+      // @ts-ignore
         if (error.code === 311) {
           console.log(error);
           message = `SOLD OUT!`;
           window.location.reload();
+      // @ts-ignore
         } else if (error.code === 312) {
           message = `Minting period hasn't started yet.`;
         }
