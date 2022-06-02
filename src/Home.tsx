@@ -493,7 +493,7 @@ const Home = (props: HomeProps) => {
           marginBottom: '3rem',
         }}
       >
-        Solana NFT Minter
+        Cool Lions NFT Minter
       </h1>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
         <Paper
