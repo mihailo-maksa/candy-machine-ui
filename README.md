@@ -1,1 +1,1 @@
-# Solana NFT Minter UI
+# Cool Lions Mint Site
