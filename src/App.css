@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+.white-text {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
